@@ -35,6 +35,8 @@ before_script:
 # Running the tests with grunt
 script:
   - grunt
+  - echo "$M1"
+  - echo "$M2"
 
 # Tell istanbul to generate a coverage report
 after_script:
