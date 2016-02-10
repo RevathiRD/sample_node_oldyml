@@ -1,3 +1,3 @@
 FROM drydock/u12nod:prod
-. /src
+ADD . /src
 RUN mkdir -p /tmp/logs
