@@ -12,7 +12,7 @@ node_js:
   - 5.0
 matrix:
   allow_failures:
-    - node_js: 4.2.2
+    - node_js: "0.11"
       
 # The path for Xunit to output test reports
 env:
@@ -36,7 +36,7 @@ before_script:
 # Running the tests with grunt
 script:
   - grunt
-
+  - if [ "$SHIPPABLE_NODE_VERSION" == "0.11" ]; then foobar; fi
 # Tell istanbul to generate a coverage report
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
