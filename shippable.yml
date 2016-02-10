@@ -1,7 +1,7 @@
 # Language setting
 language: node_js
 
-build_image: drydock/u12nod:prod
+#build_image: drydock/u12nod:prod
 
 # Version number
 node_js:
@@ -10,11 +10,11 @@ node_js:
 # The path for Xunit to output test reports
 env:
  global:
-  
+  - f1=foo 
   #- XUNIT_FILE=shippable/testresults/result.xml
-   matrix:
-     - M1=ONE
-     - M2=TWO
+ matrix:
+    - M1=ONE
+    - M2=TWO
 
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
@@ -34,7 +34,7 @@ before_script:
 # Running the tests with grunt
 script:
   - grunt
-  - echo "$M1"
+  - echo "$f1"
 
 # Tell istanbul to generate a coverage report
 after_script:
