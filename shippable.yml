@@ -22,6 +22,9 @@ matrix:
         - m1=one
         - m2=tw0
     - node_js: "0.12"
+      env:
+        - m1=one
+        - m2=tw0
       
 # The path for Xunit to output test reports
 env:
