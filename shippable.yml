@@ -28,6 +28,10 @@ matrix:
    - node_js: "0.11"
      env: 
       - m1=one
+   - node_js: "0.10.31"
+     env: 
+      - m1=one
+     # - m2=two
      # - m2=two
     # env: m2=two
    #- node_js: "0.11"
