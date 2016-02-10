@@ -9,6 +9,7 @@ node_js:
 
 # The path for Xunit to output test reports
 env:
+  - M1=ONE
   - XUNIT_FILE=shippable/testresults/result.xml
 
 install:
