@@ -11,6 +11,7 @@ node_js:
 env:
  global:
   - f1=foo 
+  - f2=bar
   #- XUNIT_FILE=shippable/testresults/result.xml
  matrix:
     - M1=ONE
@@ -35,6 +36,7 @@ before_script:
 script:
   - grunt
   - echo "$f1"
+  - echo "$f2"
 
 # Tell istanbul to generate a coverage report
 after_script:
