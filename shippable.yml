@@ -3,6 +3,7 @@ language: node_js
 
 #build_image: drydock/u12nod:prod
 
+
 # Version number
 node_js:
   - 0.12
@@ -10,9 +11,16 @@ node_js:
   - 0.11
   - 0.10.31
   - 5.0
+env:
+  - m1=one
+  - m2=two
+
 matrix:
   allow_failures:
     - node_js: "0.11"
+      env: 
+        - m1=one
+        - m2=tw0
     - node_js: "0.12"
       
 # The path for Xunit to output test reports
