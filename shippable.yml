@@ -1,16 +1,23 @@
 # Language setting
 language: node_js
 
-build_image: drydock/u12nod:prod
+#build_image: drydock/u12nod:prod
 
 # Version number
 node_js:
+  - 0.10.31
+  - 0.11
+  - 5.0
+ # - 4.2.2
   - 0.12
 
 # The path for Xunit to output test reports
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
-
+matrix:
+  include: "4.2.2"
+  exclude: "5.0"
+    
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
   - node --version
