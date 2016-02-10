@@ -10,10 +10,11 @@ node_js:
 # The path for Xunit to output test reports
 env:
  global:
+  
   #- XUNIT_FILE=shippable/testresults/result.xml
-matrix:
- - M1=ONE
- - M2=TWO
+   matrix:
+     - M1=ONE
+     - M2=TWO
 
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
@@ -33,6 +34,7 @@ before_script:
 # Running the tests with grunt
 script:
   - grunt
+  - echo "$M1"
 
 # Tell istanbul to generate a coverage report
 after_script:
