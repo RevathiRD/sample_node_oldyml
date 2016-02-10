@@ -15,8 +15,8 @@ node_js:
 env:
  global:
   - M1=ONE
-  - M2=TW0
-  - XUNIT_FILE=shippable/testresults/result.xml
+  #- M2=TW0
+  #- XUNIT_FILE=shippable/testresults/result.xml
 
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
@@ -37,7 +37,7 @@ before_script:
 script:
   - grunt
   - echo "$M1"
-  - echo "$M2"
+  #- echo "$M2"
 # Tell istanbul to generate a coverage report
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
