@@ -13,7 +13,7 @@ node_js:
 
 # The path for Xunit to output test reports
 env:
-  global
+  global:
    - m1=one
   #- m2=two
   #- XUNIT_FILE=shippable/testresults/result.xml
