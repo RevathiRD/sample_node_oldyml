@@ -9,7 +9,7 @@ node_js:
   - 0.11
   - 5.0
  # - 4.2.2
-  - 0.12
+  #- 0.12
 
 # The path for Xunit to output test reports
 env:
@@ -17,9 +17,10 @@ env:
 matrix:
   include: 
    - node_js: "4.2.2"
-      
+   - node_js: "0.12"  
   exclude: 
    - node_js: "5"
+   - node_js: "0.11"
     
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
