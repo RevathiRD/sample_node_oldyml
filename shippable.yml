@@ -9,7 +9,11 @@ node_js:
 
 # The path for Xunit to output test reports
 env:
-  - XUNIT_FILE=shippable/testresults/result.xml
+ global:
+  #- XUNIT_FILE=shippable/testresults/result.xml
+matrix:
+ - M1=ONE
+ - M2=TWO
 
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
