@@ -5,11 +5,16 @@ build_image: drydock/u12nod:prod
 
 # Version number
 node_js:
+  - 0.10.31
+  - 0.11
+  - 5.0
+  - 4.2.2
   - 0.12
 
 # The path for Xunit to output test reports
 env:
   - M1=ONE
+  - M2=TWO
   - XUNIT_FILE=shippable/testresults/result.xml
 
 install:
