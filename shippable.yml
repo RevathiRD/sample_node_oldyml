@@ -19,7 +19,7 @@ matrix:
    - node_js: "4.2.2"
       
   exclude: 
-   - node_js: "5.0"
+   - node_js: "5"
     
 install:
   - source ~/.nvm/nvm.sh && nvm install 0.12
