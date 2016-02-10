@@ -14,7 +14,8 @@ node_js:
 # The path for Xunit to output test reports
 env:
   global:
-   - m1=one
+   env:
+    - m1=one
   #- m2=two
   #- XUNIT_FILE=shippable/testresults/result.xml
   matrix:
