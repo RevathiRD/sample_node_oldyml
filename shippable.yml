@@ -1,9 +1,6 @@
 # Language setting
 language: node_js
 
-build_image: shippable/minv2:latest
-addons:
-  - postgresql: "9.3"
 
 # Version number
 node_js:
