@@ -5,10 +5,10 @@ build_image: shippable/minv2:latest
 
 # Version number
 node_js:
-  - 0.12
-  - 4.2.2
-  - 0.11
-  - 5.0
+ # - 0.12
+  #- 4.2.2
+  #- 0.11
+  #- 5.0
   - 0.10.25
 addons:
  postgresql : "9.3"
