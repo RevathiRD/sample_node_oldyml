@@ -5,11 +5,11 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 0.10
-  - 4.2.3
-  - iojs-v1
-  - iojs-v2
-  - iojs-v3
+  #- 0.10
+  #- 4.2.3
+  #- iojs-v1
+  #- iojs-v2
+  #- iojs-v3
 # The path for Xunit to output test reports
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
